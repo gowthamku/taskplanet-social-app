@@ -1,101 +1,198 @@
-TaskPlanet Social App
-Overview
+# TaskPlanet Social App
 
-TaskPlanet Social App is a full-stack social media application inspired by the Social Feed section of the TaskPlanet mobile app.
+A full-stack social media application inspired by the Social Feed feature of the TaskPlanet mobile application.
 
-Users can:
+Users can create accounts, publish text or image posts, like posts, comment on posts, and view content shared by other users.
 
-Create an account
-Login securely
-Create text posts
-Upload image posts
-View posts from all users
-Like posts
-Comment on posts
-View total likes and comments instantly
-Features
-Authentication
-User Signup
-User Login
-JWT Authentication
-Protected Routes
-Posts
-Create text posts
-Upload image posts
-Public social feed
-Display username and content
-Engagement
-Like posts
-Comment on posts
-View total likes count
-View total comments count
-Store commenter usernames
-Responsive Design
-Mobile-friendly UI
-Desktop-friendly UI
-Inspired by TaskPlanet Social Feed
-Tech Stack
-Frontend
-React.js
-Axios
-React Router DOM
-CSS
-Backend
-Node.js
-Express.js
-JWT Authentication
-Multer (Image Upload)
-Database
-MongoDB Atlas
-Mongoose
-Project Structure
+---
+
+## Features
+
+### Authentication
+
+- User Registration
+- User Login
+- JWT-based Authentication
+- Protected Routes
+
+### Post Management
+
+- Create text posts
+- Upload image posts
+- Create posts with text, image, or both
+- View all posts in a public feed
+
+### Social Interaction
+
+- Like posts
+- Comment on posts
+- View total likes
+- View total comments
+- Display usernames for comments
+
+### Responsive Design
+
+- Mobile-friendly layout
+- Desktop-friendly layout
+- Clean and simple user interface
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React.js
+- React Router DOM
+- Axios
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- JWT Authentication
+- Multer
+
+### Database
+
+- MongoDB Atlas
+- Mongoose
+
+---
+
+## Project Structure
+
+```bash
 taskplanet-social-app
 │
 ├── frontend
 │   ├── src
-│   ├── components
-│   ├── pages
-│   └── styles
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── styles
+│   │   └── api
 │
 ├── backend
 │   ├── controllers
+│   ├── middleware
 │   ├── models
 │   ├── routes
-│   ├── middleware
-│   └── uploads
+│   ├── uploads
+│   └── config
 │
 └── README.md
-Installation
-Clone Repository
-git clone <repository-url>
-Frontend Setup
-cd frontend
-npm install
-npm run dev
-Backend Setup
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/taskplanet-social-app.git
+```
+
+### Backend Setup
+
+```bash
 cd backend
 npm install
 npm run dev
-Environment Variables
-Backend
+```
 
-Create .env
+### Frontend Setup
 
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## Environment Variables
+
+### Backend (.env)
+
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
-Frontend
+```
 
-Create .env
+### Frontend (.env)
 
+```env
 VITE_API_URL=http://localhost:5000/api
-Future Improvements
-User profile page
-Post sharing
-Pagination
-Dark mode
-Real-time notifications
-Image optimization
-Author
+```
 
-Gowtham Kumar Kummari
+---
+
+## API Endpoints
+
+### Authentication
+
+```http
+POST /api/auth/signup
+POST /api/auth/login
+```
+
+### Posts
+
+```http
+GET    /api/posts
+POST   /api/posts
+PUT    /api/posts/like/:id
+POST   /api/posts/comment/:id
+```
+
+---
+
+## Assignment Requirements Covered
+
+✅ User Signup and Login
+
+✅ MongoDB Database Integration
+
+✅ JWT Authentication
+
+✅ Create Text Posts
+
+✅ Create Image Posts
+
+✅ Public Feed
+
+✅ Like Functionality
+
+✅ Comment Functionality
+
+✅ Display Like Count
+
+✅ Display Comment Count
+
+✅ Responsive UI
+
+✅ Separate Frontend and Backend Structure
+
+---
+
+## Future Improvements
+
+- User Profiles
+- Post Sharing
+- Pagination
+- Real-time Notifications
+- Dark Mode
+- Search Functionality
+
+---
+
+## Author
+
+**Gowtham Kumar Kummari**
+
+Full Stack Developer
+
+GitHub: https://github.com/your-username
