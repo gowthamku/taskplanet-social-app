@@ -93,6 +93,26 @@ taskplanet-social-app
 ```bash
 git clone https://github.com/your-username/taskplanet-social-app.git
 ```
+## Live Demo
+
+### Frontend (Vercel)
+https://taskplanet-social-app-delta.vercel.app
+
+### Backend API (Render)
+https://taskplanet-social-app-kzdq.onrender.com
+
+### Database
+MongoDB Atlas
+
+## Deployment
+
+The application is deployed using:
+
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
+
+The frontend communicates with the backend through REST APIs, and all application data is stored in MongoDB Atlas.
 
 ### Backend Setup
 
