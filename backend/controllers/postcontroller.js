@@ -7,8 +7,7 @@ const createPost = async (req, res) => {
     let image = "";
 
     if (req.file) {
-      image = `http://localhost:5000/uploads/${req.file.filename}`;
-    }
+image = `${process.env.BASE_URL}/uploads/${req.file.filename}`;    }
 
     const post = await Post.create({
       user: req.user._id,
