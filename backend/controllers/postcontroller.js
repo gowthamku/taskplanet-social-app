@@ -7,7 +7,9 @@ const createPost = async (req, res) => {
     let image = "";
 
     if (req.file) {
-image = `${process.env.BASE_URL}/uploads/${req.file.filename}`;    }
+const BASE_URL = process.env.BASE_URL || "https://taskplanet-social-app-kzdq.onrender.com";
+
+image = `${BASE_URL}/uploads/${req.file.filename}`;    }
 
     const post = await Post.create({
       user: req.user._id,
