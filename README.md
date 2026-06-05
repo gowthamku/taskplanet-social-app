@@ -215,4 +215,7 @@ POST   /api/posts/comment/:id
 
 Full Stack Developer
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/gowthamku
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dd46c288-c336-4838-be19-c35d5d26660e" />
+
