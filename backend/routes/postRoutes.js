@@ -7,7 +7,7 @@ const {
   getPosts,
   likePost,
   commentPost,
-} = require("../controllers/postController");
+} = require("../controllers/postcontroller");
 
 const router = express.Router();
 
